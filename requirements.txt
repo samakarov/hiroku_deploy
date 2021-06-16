@@ -3,4 +3,4 @@ pandas==0.23.4
 lightfm==1.15
 nmslib==2.0.5
 scipy==1.1.0
-zipfile==3.2.0
+zipfile==3.8.
