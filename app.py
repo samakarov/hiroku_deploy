@@ -63,7 +63,7 @@ def main():
 	
 	
 	#Загружаем данные
-	ratings, books  = read_files(folder_name='data') 
+	ratings, books  = read_files(folder_name='\data') 
 	name_mapper, author_mapper = make_mappers()
 	item_embeddings,nms_idx = load_embeddings()
 
