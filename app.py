@@ -32,9 +32,9 @@ def main():
 		"""
 		Функция для чтения файлов + преобразование к  нижнему регистру
 		"""
-		zr = zipfile.ZipFile(folder_name+'/ratings.zip', 'r')
+		zr = zipfile.ZipFile(folder_name+'\ratings.zip', 'r')
 		ratings = pd.read_csv(zr.open('ratings.csv'))
-		zb = zipfile.ZipFile(folder_name+'/books.zip', 'r')
+		zb = zipfile.ZipFile(folder_name+'\books.zip', 'r')
 		books = pd.read_csv(zb.open('books.csv'))
 		books['title'] = books.title.str.lower()
 		return ratings, books 
